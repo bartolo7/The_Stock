@@ -1,0 +1,8 @@
+version: '3'
+services:
+  the_stock_host:
+    image: the_stock:1.5
+    container_name: stock_host
+    ports:
+     - "5000:5000"
+    restart: always
