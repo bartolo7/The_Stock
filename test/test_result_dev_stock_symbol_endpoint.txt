@@ -1,0 +1,56 @@
+
+=====================================================================
+
+TEST SCENARIO 1
+Benching: https://2wvhut15w3.execute-api.eu-west-1.amazonaws.com/dev/Stock-Symbol/?symbol=PG
+Testing 100 requests with concurrent 10
+
+=====================================================================
+
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 2wvhut15w3.execute-api.eu-west-1.amazonaws.com (be patient).....done
+
+
+Server Software:        
+Server Hostname:        2wvhut15w3.execute-api.eu-west-1.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        2wvhut15w3.execute-api.eu-west-1.amazonaws.com
+
+Document Path:          /dev/Stock-Symbol/?symbol=PG
+Document Length:        467 bytes
+
+Concurrency Level:      10
+Time taken for tests:   45.814 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      79900 bytes
+HTML transferred:       46700 bytes
+Requests per second:    2.18 [#/sec] (mean)
+Time per request:       4581.438 [ms] (mean)
+Time per request:       458.144 [ms] (mean, across all concurrent requests)
+Transfer rate:          1.70 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      142  259 154.2    189     662
+Processing:  3890 4169 327.4   4079    5869
+Waiting:     3889 4168 327.3   4078    5869
+Total:       4039 4428 325.9   4301    6058
+
+Percentage of the requests served within a certain time (ms)
+  50%   4301
+  66%   4485
+  75%   4595
+  80%   4617
+  90%   4815
+  95%   4816
+  98%   5987
+  99%   6058
+ 100%   6058 (longest request)
+
+=====================================================================
+
