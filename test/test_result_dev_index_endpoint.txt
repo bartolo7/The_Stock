@@ -1,0 +1,108 @@
+
+=====================================================================
+
+TEST SCENARIO 1
+Benching: https://2wvhut15w3.execute-api.eu-west-1.amazonaws.com/dev
+Testing 100 requests with concurrent 10
+
+=====================================================================
+
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 2wvhut15w3.execute-api.eu-west-1.amazonaws.com (be patient).....done
+
+
+Server Software:        
+Server Hostname:        2wvhut15w3.execute-api.eu-west-1.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        2wvhut15w3.execute-api.eu-west-1.amazonaws.com
+
+Document Path:          /dev
+Document Length:        458 bytes
+
+Concurrency Level:      10
+Time taken for tests:   3.679 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      79000 bytes
+HTML transferred:       45800 bytes
+Requests per second:    27.18 [#/sec] (mean)
+Time per request:       367.898 [ms] (mean)
+Time per request:       36.790 [ms] (mean, across all concurrent requests)
+Transfer rate:          20.97 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      145  236  98.9    199     543
+Processing:    57  119  60.7    115     483
+Waiting:       57  117  60.9    114     482
+Total:        210  354 120.0    321     810
+
+Percentage of the requests served within a certain time (ms)
+  50%    321
+  66%    362
+  75%    379
+  80%    388
+  90%    600
+  95%    659
+  98%    710
+  99%    810
+ 100%    810 (longest request)
+
+=====================================================================
+
+TEST SCENARIO 2
+Testing 1000 requests with concurrent 10
+
+=====================================================================
+
+This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 2wvhut15w3.execute-api.eu-west-1.amazonaws.com (be patient)
+
+
+Server Software:        
+Server Hostname:        2wvhut15w3.execute-api.eu-west-1.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+TLS Server Name:        2wvhut15w3.execute-api.eu-west-1.amazonaws.com
+
+Document Path:          /dev
+Document Length:        458 bytes
+
+Concurrency Level:      10
+Time taken for tests:   31.975 seconds
+Complete requests:      1000
+Failed requests:        0
+Total transferred:      790000 bytes
+HTML transferred:       458000 bytes
+Requests per second:    31.27 [#/sec] (mean)
+Time per request:       319.754 [ms] (mean)
+Time per request:       31.975 [ms] (mean, across all concurrent requests)
+Transfer rate:          24.13 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      142  222  77.0    192     579
+Processing:    54   97  79.2     82    1911
+Waiting:       54   95  79.2     80    1911
+Total:        202  318 120.6    282    2103
+
+Percentage of the requests served within a certain time (ms)
+  50%    282
+  66%    332
+  75%    366
+  80%    392
+  90%    462
+  95%    516
+  98%    598
+  99%    676
+ 100%   2103 (longest request)
+
+=====================================================================
+
